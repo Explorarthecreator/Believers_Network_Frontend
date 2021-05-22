@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "build:css": "postcss styles/tailwind.css -o styles/globals.css",
     "watch:css": "postcss styles/tailwind.css -o styles/globals.css -w",
     "purge:css": "cross-env NODE_ENV=production yarn run build:css"
@@ -17,7 +17,9 @@
     "next": "10.0.5",
     "node-sass": "^5.0.0",
     "react": "17.0.1",
+    "react-back-to-top-button": "^0.0.14",
     "react-dom": "17.0.1",
+    "react-icons": "^4.2.0",
     "react-otp-input": "^2.3.0",
     "swiper": "^6.5.0"
   },
