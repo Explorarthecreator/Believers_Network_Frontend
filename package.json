@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node api.js && next dev",
+    "build": "node api.js && next build",
+    "start": "node api.js && next start",
     "build:css": "postcss styles/tailwind.css -o styles/globals.css",
     "watch:css": "postcss styles/tailwind.css -o styles/globals.css -w",
     "purge:css": "cross-env NODE_ENV=production yarn run build:css"
